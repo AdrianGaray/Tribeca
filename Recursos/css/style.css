@@ -4,19 +4,44 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 *{
     box-sizing:border-box;
+    margin: 0px; /* margin - padding, se ponen en ceso para eliminar los margenes del navegador */
+    padding: 0px
 }
-    
+
 html{
     
     Background-color:white;
-    Color:red;
+    Color: black;
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size:20px;
-    text-rendering: optimizeLegibility;
+    font-weight: 300; /* permite establecer el grosor con el que se muestran las letras del texto */
+    font-size:16px; /*  especifica la dimensión de la letra */
+    text-rendering: optimizeLegibility; /*  Que da prioridad a la legibilidad del texto. Habilita el kerning y la ligadura de la tipografía. */
     }
 
 
+header{
+ background-image:  linear-gradient(rgba(0,0,0,0.61),rgba(0,0,0,0.61)), url('Imagenes/Casa2.jpg'); /* linear-gradient, para oscureser la foto */
+ height: 100vh;  /* vh, del display ponga el alto  */
+ background-size: cover;  /* para que el fondo cuabra toda la pantalla  */
+ background-position: center; /* para que se centre la foto */
+
+}
+
+.titulo-box{
+    /* para centrar el titulo-box */
+    position: absolute;
+    width: 80%; 
+    top:50%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+
+}
+
+h1{
+color: white; /* se cambia el titulo a blanco */
+
+}
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
