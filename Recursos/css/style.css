@@ -8,6 +8,11 @@
     padding: 0px
 }
 
+:root{
+--brand-color:  #3498db ;
+--brand-sombra: #246A99;
+}
+
 html{
     
     Background-color:white;
@@ -40,10 +45,39 @@ header{
 
 h1{
 color: white; /* se cambia el titulo a blanco */
-
+font-size: 2rem;  /* rem - toma el valor inicial q esta declarado en el htmml 16px * 16px - 32px */
+text-transform: uppercase;
+letter-spacing: 1px; /* distancia q van a manejar entre palabras */
+word-spacing: 3px; /* distancia q van a manejar entre letra */
+margin-bottom: 20px;
 }
 
+.btn{
+    display: inline-block ; /* los elementos link son elementos inline, por lo cual no le puedo dar un tamaño o un ancho, pero los elemento inline-block si se puede declarar  */
+    padding: 10px 30px; /* arriba y abajo - izquierda y derecha */
+    text-decoration:none ; /* saca la linea de abajo _____  */
+    border:1px solid  var(--brand-color); /*  */
+    border-radius:200px ; /*  */    
+    color:white ; /*  */    
+    transition:     background-color 0.4s, border 0.4s, color 0.4s;
+    }
 
+    .btn-completo    {
+
+        Background-color:  var(--brand-color); 
+    }
+
+    .btn-transparente    {
+
+color: var(--brand-color);
+    }
+
+.btm:hover    {
+
+    Background-color: var(--brand-sombra);
+    border:1px solid  var(--brand-sombra);
+    color: white;
+        }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Heading*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
