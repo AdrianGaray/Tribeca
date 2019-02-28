@@ -1,136 +1,104 @@
-
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*configuracion*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-*{
-    box-sizing:border-box;
-    margin: 0px; /* margin - padding, se ponen en ceso para eliminar los margenes del navegador */
-    padding: 0px
+* {
+  box-sizing: border-box;
+  margin: 0px; /* margin - padding, se ponen en ceso para eliminar los margenes del navegador */
+  padding: 0px;
 }
 
-:root{
---brand-color:  #3498db ;
---brand-sombra: #246A99;
+:root {
+  --brand-color: #3498db;
+  --brand-sombra: #246a99;
 }
 
-html{
-    
-    Background-color:white;
-    Color: black;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300; /* permite establecer el grosor con el que se muestran las letras del texto */
-    font-size:16px; /*  especifica la dimensión de la letra */
-    text-rendering: optimizeLegibility; /*  Que da prioridad a la legibilidad del texto. Habilita el kerning y la ligadura de la tipografía. */
-    }
-
-
-header{
- background-image:  linear-gradient(rgba(0,0,0,0.61),rgba(0,0,0,0.61)), url('Imagenes/Casa2.jpg'); /* linear-gradient, para oscureser la foto */
- height: 100vh;  /* vh, del display ponga el alto  */
- background-size: cover;  /* para que el fondo cuabra toda la pantalla  */
- background-position: center; /* para que se centre la foto */
-
+html {
+  background-color: white;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300; /* permite establecer el grosor con el que se muestran las letras del texto */
+  font-size: 16px; /*  especifica la dimensión de la letra */
+  text-rendering: optimizeLegibility; /*  Que da prioridad a la legibilidad del texto. Habilita el kerning y la ligadura de la tipografía. */
 }
 
-.titulo-box{
-    /* para centrar el titulo-box */
-    position: absolute;
-    width: 80%; 
-    top:50%;
-    left: 0px;
-    right: 0px;
-    margin: auto;
-
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)),
+    url("Imagenes/Casa2.jpg"); /* linear-gradient, para oscureser la foto */
+  height: 100vh; /* vh, del display ponga el alto  */
+  background-size: cover; /* para que el fondo cuabra toda la pantalla  */
+  background-position: center; /* para que se centre la foto */
 }
 
-h1{
-color: white; /* se cambia el titulo a blanco */
-font-size: 2rem;  /* rem - toma el valor inicial q esta declarado en el htmml 16px * 16px - 32px */
-text-transform: uppercase;
-letter-spacing: 1px; /* distancia q van a manejar entre palabras */
-word-spacing: 3px; /* distancia q van a manejar entre letra */
-margin-bottom: 20px;
+.titulo-box {
+  /* para centrar el titulo-box */
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 0px;
+  right: 0px;
+  margin: auto;
 }
 
-.btn{
-    display: inline-block ; /* los elementos link son elementos inline, por lo cual no le puedo dar un tamaño o un ancho, pero los elemento inline-block si se puede declarar  */
-    padding: 10px 30px; /* arriba y abajo - izquierda y derecha */
-    text-decoration:none ; /* saca la linea de abajo _____  */
-    border:1px solid  var(--brand-color); /*  */
-    border-radius:200px ; /*  */    
-    color:white ; /*  */    
-    transition:     background-color 0.4s, border 0.4s, color 0.4s;
-    }
+h1 {
+  color: white; /* se cambia el titulo a blanco */
+  font-size: 2rem; /* rem - toma el valor inicial q esta declarado en el htmml 16px * 16px - 32px */
+  text-transform: uppercase;
+  letter-spacing: 1px; /* distancia q van a manejar entre palabras */
+  word-spacing: 3px; /* distancia q van a manejar entre letra */
+  margin-bottom: 20px;
+}
 
-    .btn-completo    {
+.btn {
+  display: inline-block; /* los elementos link son elementos inline, por lo cual no le puedo dar un tamaño o un ancho, pero los elemento inline-block si se puede declarar  */
+  padding: 10px 30px; /* arriba y abajo - izquierda y derecha */
+  text-decoration: none; /* saca la linea de abajo _____  */
+  border: 1px solid var(--brand-color); /*  */
+  border-radius: 200px; /*  */
+  color: white; /*  */
+  transition: background-color 0.4s, border 0.4s, color 0.4s; /* el tiempo de */
+}
 
-        Background-color:  var(--brand-color); 
-    }
+.btn-completo {
+  background-color: var(--brand-color);
+}
 
-    .btn-transparente    {
+.btn-transparente {
+  color: var(--brand-color);
+}
 
-color: var(--brand-color);
-    }
-
-.btm:hover    {
-
-    Background-color: var(--brand-sombra);
-    border:1px solid  var(--brand-sombra);
-    color: white;
-        }
+.btm:hover {
+  background-color: var(--brand-sombra);
+  border: 1px solid var(--brand-sombra);
+  color: white;
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Heading*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-
-
-
-
-
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Encabezado*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Caracteristicas*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Destacadas*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-
-
-
-
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*DRegistra tu inmueble*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-
-
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Ciudad*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-
-
-
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Plan*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-
-
-
-
-
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*footer*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-
-
