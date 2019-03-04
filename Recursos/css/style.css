@@ -28,20 +28,46 @@ html {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Heading*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-h1 {
-    color: white;
-    /* se cambia el titulo a blanco */
-    font-size: 2rem;
-    /* rem - toma el valor inicial q esta declarado en el htmml 16px * 16px - 32px */
+h1,h2,h3 {
     text-transform: uppercase;
     letter-spacing: 1px;
-    /* distancia q van a manejar entre palabras */
-    word-spacing: 3px;
     /* distancia q van a manejar entre letra */
+    word-spacing: 3px;
+    /* distancia q van a manejar entre  palabras */
     margin-bottom: 20px;
 }
 
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    /* rem - toma el valor inicial q esta declarado en el htmml 16px * 16px - 32px */
+}
 
+h2 {
+    padding-top: 80px;
+    font-size: 1.5rem;
+    word-spacing: 1px;
+    text-align: center;   
+}
+
+
+h3 {
+    font-size: 1.1rem;
+    word-spacing: 1px;
+    font-weight: bold;
+    
+}
+
+/*h4 {
+    color: var(--brand-color);
+    font-size: 0.8rem;
+}*/
+
+p {
+    font-size: 0.9rem;
+    line-height: 135%;
+    text-align: left;
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Header*/
@@ -137,23 +163,119 @@ nav {
     padding-bottom: 10px;
 }
 
-.nav-principal li a:hover{ 
+.nav-principal li a:hover {
     display: inline-block;
     border-bottom: 1px solid var(--brand-color);
-    
-    
-    }
+
+
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Caracteristicas*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.caracteristicas {
+    padding-top: 80px;
+    /*display: block;
+    color: black;
+    width: 80%;
+    margin: auto;*/
+    overflow: auto;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: var(--brand-color);
+    width: 100px;
+    margin: auto;
+    margin-top: 30px;
+    content: "";
+}
+
+ .c-paragrafo {
+    width: 80%;
+    margin: auto;
+    line-height: 30%px;
+    text-align: center;
+}
+
+.c-info {
+    padding-top: 60px;
+    width: 80%;
+    margin: auto;
+}
+
+
+.col {
+    padding-left: 1%;
+}
+
+.c-info i {
+    width: 80%;
+    margin: auto;
+    font-size: 2.5rem;
+    color: var(--brand-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Destacadas*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+.vivienda-destacadas{
+    overflow: auto; /* elementos que floten izquierda a derecha, en el contenedor*/
+}
+
+.foto-casas{
+
+    padding-top: 60px;
+}
+
+.f-container{
+    width: 100%;
+    list-style-type: none; /* elimina los puntos negros de los elemtnos li*/
+  }
+
+  .f-container li{
+    float: left; /* se monte a la izquierda*/
+    width: 25%; /* todos los elementos li tiene un 25 % de ancho, porque 100 /4 = 25*/
+    overflow: hidden; /* todo lo q se muestre y sea mas grande q el 25%. q  desaparesca lo oculte de la pagina*/
+  }
+
+  .f-container  a{
+    display: block;
+    width: 100%;
+    position: relative;   
+    height: 0;
+    padding: 56.25% 0 0 0; /* la clave de q se organize del mismo el tamano las imagenes */
+    overflow: hidden;
+    cursor: help;
+    background-color: black;
+  }
+
+  .f-container img
+{
+  position: absolute; /*clave fundamental para que todas las imagenes se alineen, el contenedor padre tiene q tenes posicion relativa (  .f-container  a)*/
+  display: block;  /* imagenes comportence como block (las imagenes son inline y los elementos inline no se pueden modificar su ancho y alto) */
+  width: 100%;
+  /*max-width: 100%;*/
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: scale(1.15); /* trasforma la imagen mas grande*/
+  transition: transform 1s,opacity 1s; /* en el momento q se pasa el mouse q no se brusco */
+  opacity: 0.7; /* pone las imagenes mas oscuras */
+
+}
+
+ .f-container img:hover
+{
+transform:scale(1); /* cuando pasa el mouse por la imagen se agrande la imagen*/
+opacity: 1; /* pone las imagenes mas claras */
+} 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/*DRegistra tu inmueble*/
+/*Registra tu inmueble*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
