@@ -2,60 +2,60 @@
 /*configuracion*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    /* margin - padding, se ponen en ceso para eliminar los margenes del navegador */
-    padding: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+  /* margin - padding, se ponen en ceso para eliminar los margenes del navegador */
+  padding: 0px;
 }
 
 :root {
-    --brand-color: #3498db;
-    --brand-sombra: #246a99;
+  --brand-color: #3498db;
+  --brand-sombra: #246a99;
 }
 
 html {
-    background-color: white;
-    color: black;
-    font-family: "Raleway", sans-serif;
-    font-weight: 300;
-    /* permite establecer el grosor con el que se muestran las letras del texto */
-    font-size: 16px;
-    /*  especifica la dimensión de la letra */
-    text-rendering: optimizeLegibility;
-    /*  Que da prioridad a la legibilidad del texto. Habilita el kerning y la ligadura de la tipografía. */
+  background-color: white;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  /* permite establecer el grosor con el que se muestran las letras del texto */
+  font-size: 16px;
+  /*  especifica la dimensión de la letra */
+  text-rendering: optimizeLegibility;
+  /*  Que da prioridad a la legibilidad del texto. Habilita el kerning y la ligadura de la tipografía. */
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Heading*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-h1,h2,h3 {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    /* distancia q van a manejar entre letra */
-    word-spacing: 3px;
-    /* distancia q van a manejar entre  palabras */
-    margin-bottom: 20px;
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /* distancia q van a manejar entre letra */
+  word-spacing: 3px;
+  /* distancia q van a manejar entre  palabras */
+  margin-bottom: 20px;
 }
 
 h1 {
-    color: rgb(255, 255, 255);
-    font-size: 2rem;
-    /* rem - toma el valor inicial q esta declarado en el htmml 16px * 16px - 32px */
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  /* rem - toma el valor inicial q esta declarado en el htmml 16px * 16px - 32px */
 }
 
 h2 {
-    padding-top: 80px;
-    font-size: 1.5rem;
-    word-spacing: 1px;
-    text-align: center;   
+  padding-top: 80px;
+  font-size: 1.5rem;
+  word-spacing: 1px;
+  text-align: center;
 }
 
-
 h3 {
-    font-size: 1.1rem;
-    word-spacing: 1px;
-    font-weight: bold;
-    
+  font-size: 1.1rem;
+  word-spacing: 1px;
+  font-weight: bold;
 }
 
 /*h4 {
@@ -64,219 +64,241 @@ h3 {
 }*/
 
 p {
-    font-size: 0.9rem;
-    line-height: 135%;
-    text-align: left;
+  font-size: 0.9rem;
+  line-height: 135%;
+  text-align: left;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Header*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)),
-        url("Imagenes/Casa2.jpg");
-    /* linear-gradient, para oscureser la foto */
-    height: 100vh;
-    /* vh, del display ponga el alto  */
-    background-size: cover;
-    /* para que el fondo cuabra toda la pantalla  */
-    background-position: center;
-    /* para que se centre la foto */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)),
+    url("Imagenes/Casa2.jpg");
+  /* linear-gradient, para oscureser la foto */
+  height: 100vh;
+  /* vh, del display ponga el alto  */
+  background-size: cover;
+  /* para que el fondo cuabra toda la pantalla  */
+  background-position: center;
+  /* para que se centre la foto */
 }
 
 .titulo-box {
-    /* para centrar el titulo-box */
-    position: absolute;
-    width: 80%;
-    top: 50%;
-    left: 0px;
-    right: 0px;
-    margin: auto;
+  /* para centrar el titulo-box */
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 0px;
+  right: 0px;
+  margin: auto;
 }
 
-
-
 .btn {
-    display: inline-block;
-    /* los elementos link son elementos inline, por lo cual no le puedo dar un tamaño o un ancho, pero los elemento inline-block si se puede declarar  */
-    padding: 10px 30px;
-    /* arriba y abajo - izquierda y derecha */
-    text-decoration: none;
-    /* saca la linea de abajo _____  */
-    border: 1px solid var(--brand-color);
-    /*  */
-    border-radius: 200px;
-    /*  */
-    color: white;
-    /*  */
-    transition: background-color 0.4s, border 0.4s, color 0.4s;
-    /* el tiempo de */
+  display: inline-block;
+  /* los elementos link son elementos inline, por lo cual no le puedo dar un tamaño o un ancho, pero los elemento inline-block si se puede declarar  */
+  padding: 10px 30px;
+  /* arriba y abajo - izquierda y derecha */
+  text-decoration: none;
+  /* saca la linea de abajo _____  */
+  border: 1px solid var(--brand-color);
+  /*  */
+  border-radius: 200px;
+  /*  */
+  color: white;
+  /*  */
+  transition: background-color 0.4s, border 0.4s, color 0.4s;
+  /* el tiempo de */
 }
 
 .btn-completo {
-    background-color: var(--brand-color);
+  background-color: var(--brand-color);
 }
 
 .btn-transparente {
-    color: var(--brand-color);
+  color: var(--brand-color);
 }
 
 .btm:hover {
-    background-color: var(--brand-sombra);
-    border: 1px solid var(--brand-sombra);
-    color: white;
+  background-color: var(--brand-sombra);
+  border: 1px solid var(--brand-sombra);
+  color: white;
 }
 
-
 nav {
-    width: 80%;
-    margin: auto;
-    padding-top: 20px;
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
 }
 
 .logo {
-    float: left;
-    width: 10%;
-    min-width: 100px;
-
+  float: left;
+  width: 10%;
+  min-width: 100px;
 }
 
 .nav-principal {
-    padding-top: 40px;
-    float: right;
-
+  padding-top: 40px;
+  float: right;
 }
 
 .nav-principal li {
-    display: inline-block;
-
-
+  display: inline-block;
 }
 
 .nav-principal li a {
-    text-decoration: none;
-    color: white;
-    margin-left: 40px;
-    text-transform: uppercase;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.2s;
-    padding-bottom: 10px;
+  text-decoration: none;
+  color: white;
+  margin-left: 40px;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s;
+  padding-bottom: 10px;
 }
 
 .nav-principal li a:hover {
-    display: inline-block;
-    border-bottom: 1px solid var(--brand-color);
-
-
+  display: inline-block;
+  border-bottom: 1px solid var(--brand-color);
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Caracteristicas*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .caracteristicas {
-    padding-top: 80px;
-    /*display: block;
+  padding-top: 80px;
+  /*display: block;
     color: black;
     width: 80%;
     margin: auto;*/
-    overflow: auto;
+  overflow: auto;
 }
 
 h2::after {
-    display: block;
-    height: 2px;
-    background-color: var(--brand-color);
-    width: 100px;
-    margin: auto;
-    margin-top: 30px;
-    content: "";
+  display: block;
+  height: 2px;
+  background-color: var(--brand-color);
+  width: 100px;
+  margin: auto;
+  margin-top: 30px;
+  content: "";
 }
 
- .c-paragrafo {
-    width: 80%;
-    margin: auto;
-    line-height: 30%px;
-    text-align: center;
+.c-paragrafo {
+  width: 80%;
+  margin: auto;
+  line-height: 30%px;
+  text-align: center;
 }
 
 .c-info {
-    padding-top: 60px;
-    width: 80%;
-    margin: auto;
+  padding-top: 60px;
+  width: 80%;
+  margin: auto;
 }
 
-
 .col {
-    padding-left: 1%;
+  padding-left: 1%;
 }
 
 .c-info i {
-    width: 80%;
-    margin: auto;
-    font-size: 2.5rem;
-    color: var(--brand-color);
-    text-align: center;
-    margin-bottom: 30px;
+  width: 80%;
+  margin: auto;
+  font-size: 2.5rem;
+  color: var(--brand-color);
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Destacadas*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-.vivienda-destacadas{
-    overflow: auto; /* elementos que floten izquierda a derecha, en el contenedor*/
+.vivienda-destacadas {
+  overflow: auto; /* elementos que floten izquierda a derecha, en el contenedor*/
 }
 
-.foto-casas{
-
-    padding-top: 60px;
+.foto-casas {
+  padding-top: 60px;
 }
 
-.f-container{
-    width: 100%;
-    list-style-type: none; /* elimina los puntos negros de los elemtnos li*/
-  }
+.f-container {
+  width: 100%;
+  list-style-type: none; /* elimina los puntos negros de los elemtnos li*/
+}
 
-  .f-container li{
-    float: left; /* se monte a la izquierda*/
-    width: 25%; /* todos los elementos li tiene un 25 % de ancho, porque 100 /4 = 25*/
-    overflow: hidden; /* todo lo q se muestre y sea mas grande q el 25%. q  desaparesca lo oculte de la pagina*/
-  }
+.f-container li {
+  float: left; /* se monte a la izquierda*/
+  width: 25%; /* todos los elementos li tiene un 25 % de ancho, porque 100 /4 = 25*/
+  overflow: hidden; /* todo lo q se muestre y sea mas grande q el 25%. q  desaparesca lo oculte de la pagina*/
+}
 
-  .f-container  a{
-    display: block;
-    width: 100%;
-    position: relative;   
-    height: 0;
-    padding: 56.25% 0 0 0; /* la clave de q se organize del mismo el tamano las imagenes */
-    overflow: hidden;
-    cursor: help;
-    background-color: black;
-  }
+.f-container a {
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 0;
+  padding: 56.25% 0 0 0; /* la clave de q se organize del mismo el tamano las imagenes */
+  overflow: hidden;
+  cursor: help;
+  background-color: black;
+}
 
-  .f-container img
-{
+.f-container img {
   position: absolute; /*clave fundamental para que todas las imagenes se alineen, el contenedor padre tiene q tenes posicion relativa (  .f-container  a)*/
-  display: block;  /* imagenes comportence como block (las imagenes son inline y los elementos inline no se pueden modificar su ancho y alto) */
+  display: block; /* imagenes comportence como block (las imagenes son inline y los elementos inline no se pueden modificar su ancho y alto) */
   width: 100%;
   /*max-width: 100%;*/
   top: 0;
   bottom: 0;
   margin: auto;
   transform: scale(1.15); /* trasforma la imagen mas grande*/
-  transition: transform 1s,opacity 1s; /* en el momento q se pasa el mouse q no se brusco */
+  transition: transform 1s, opacity 1s; /* en el momento q se pasa el mouse q no se brusco */
   opacity: 0.7; /* pone las imagenes mas oscuras */
-
 }
 
- .f-container img:hover
-{
-transform:scale(1); /* cuando pasa el mouse por la imagen se agrande la imagen*/
-opacity: 1; /* pone las imagenes mas claras */
-} 
+.f-container img:hover {
+  transform: scale(
+    1
+  ); /* cuando pasa el mouse por la imagen se agrande la imagen*/
+  opacity: 1; /* pone las imagenes mas claras */
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Registra tu inmueble*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.registra {
+    overflow: hidden;
+}
+
+
+.registra img{
+    display: block;
+    float: right;
+    width: 20%;
+    margin-right: 30px;
+}
+
+.registra-container p{
+
+    padding: 10px 0px;
+    /*font-size: 0.8rem;*/
+}
+
+.registra-container i{
+
+    color: var(--brand-color);
+    width: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.registra-container a{
+    margin-top: 40px;
+    margin-left: 40px;
+    /*display: block;
+    text-align: center;    
+    width: 80%;*/
+    
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Ciudad*/
