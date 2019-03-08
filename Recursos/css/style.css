@@ -37,6 +37,7 @@ h3 {
   word-spacing: 3px;
   /* distancia q van a manejar entre  palabras */
   margin-bottom: 20px;
+  font-weight: 300;
 }
 
 h1 {
@@ -103,16 +104,17 @@ header {
   /* saca la linea de abajo _____  */
   border: 1px solid var(--brand-color);
   /*  */
-  border-radius: 200px;
+  border-radius: 100px;
   /*  */
   color: white;
   /*  */
-  transition: background-color 0.4s, border 0.4s, color 0.4s;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
   /* el tiempo de */
 }
 
 .btn-completo {
   background-color: var(--brand-color);
+  margin-right: 20px;
 }
 
 .btn-transparente {
@@ -122,7 +124,6 @@ header {
 .btm:hover {
   background-color: var(--brand-sombra);
   border: 1px solid var(--brand-sombra);
-  color: white;
 }
 
 nav {
@@ -166,10 +167,10 @@ nav {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .caracteristicas {
   padding-top: 80px;
-  /*display: block;
-    color: black;
-    width: 80%;
-    margin: auto;*/
+  display: block;
+  color: black;
+  width: 80%;
+  margin: auto;
   overflow: auto;
 }
 
@@ -214,7 +215,8 @@ h2::after {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .vivienda-destacadas {
-  overflow: auto; /* elementos que floten izquierda a derecha, en el contenedor*/
+  overflow: auto;
+  /* elementos que floten izquierda a derecha, en el contenedor*/
 }
 
 .foto-casas {
@@ -223,13 +225,17 @@ h2::after {
 
 .f-container {
   width: 100%;
-  list-style-type: none; /* elimina los puntos negros de los elemtnos li*/
+  list-style-type: none;
+  /* elimina los puntos negros de los elemtnos li*/
 }
 
 .f-container li {
-  float: left; /* se monte a la izquierda*/
-  width: 25%; /* todos los elementos li tiene un 25 % de ancho, porque 100 /4 = 25*/
-  overflow: hidden; /* todo lo q se muestre y sea mas grande q el 25%. q  desaparesca lo oculte de la pagina*/
+  float: left;
+  /* se monte a la izquierda*/
+  width: 25%;
+  /* todos los elementos li tiene un 25 % de ancho, porque 100 /4 = 25*/
+  overflow: hidden;
+  /* todo lo q se muestre y sea mas grande q el 25%. q  desaparesca lo oculte de la pagina*/
 }
 
 .f-container a {
@@ -237,94 +243,101 @@ h2::after {
   width: 100%;
   position: relative;
   height: 0;
-  padding: 56.25% 0 0 0; /* la clave de q se organize del mismo el tamano las imagenes */
+  padding: 56.25% 0 0 0;
+  /* la clave de q se organize del mismo el tamano las imagenes */
   overflow: hidden;
   cursor: help;
   background-color: black;
 }
 
 .f-container img {
-  position: absolute; /*clave fundamental para que todas las imagenes se alineen, el contenedor padre tiene q tenes posicion relativa (  .f-container  a)*/
-  display: block; /* imagenes comportence como block (las imagenes son inline y los elementos inline no se pueden modificar su ancho y alto) */
+  position: absolute;
+  /*clave fundamental para que todas las imagenes se alineen, el contenedor padre tiene q tenes posicion relativa (  .f-container  a)*/
+  display: block;
+  /* imagenes comportence como block (las imagenes son inline y los elementos inline no se pueden modificar su ancho y alto) */
   width: 100%;
   /*max-width: 100%;*/
   top: 0;
   bottom: 0;
   margin: auto;
-  transform: scale(1.15); /* trasforma la imagen mas grande*/
-  transition: transform 1s, opacity 1s; /* en el momento q se pasa el mouse q no se brusco */
-  opacity: 0.7; /* pone las imagenes mas oscuras */
+  transform: scale(1.15);
+  /* trasforma la imagen mas grande*/
+  transition: transform 1s, opacity 1s;
+  /* en el momento q se pasa el mouse q no se brusco */
+  opacity: 0.7;
+  /* pone las imagenes mas oscuras */
 }
 
 .f-container img:hover {
-  transform: scale(
-    1
-  ); /* cuando pasa el mouse por la imagen se agrande la imagen*/
-  opacity: 1; /* pone las imagenes mas claras */
+  transform: scale(1);
+  /* cuando pasa el mouse por la imagen se agrande la imagen*/
+  opacity: 1;
+  /* pone las imagenes mas claras */
 }
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Registra tu inmueble*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .registra {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 
-.registra img{
-    display: block;
-    float: right;
-    width: 20%;
-    margin-right: 30px;
+.registra img {
+  display: block;
+  float: right;
+  width: 20%;
+  margin-right: 30px;
 }
 
-.registra-container p{
+.registra-container p {
 
-    padding: 10px 0px;
-    /*font-size: 0.8rem;*/
+  padding: 10px 0px;
+  /*font-size: 0.8rem;*/
 }
 
-.registra-container i{
+.registra-container i {
 
-    color: var(--brand-color);
-    width: 50px;
-    font-size: 1.2rem;
-    text-align: center;
+  color: var(--brand-color);
+  width: 50px;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
-.registra-container a{
-    margin-top: 40px;
-    margin-left: 40px;
-    /*display: block;
+.registra-container a {
+  margin-top: 40px;
+  margin-left: 40px;
+  /*display: block;
     text-align: center;    
     width: 80%;*/
-    
+
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Ciudad*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.ciudad{
+.ciudad {
   overflow: auto;
 }
 
-.ciudad ul{
+.ciudad ul {
   overflow: hidden;
   width: 100%;
   margin-bottom: 20px;
   list-style-type: none;
 }
 
-.ciudad .cuartos{
+.ciudad .cuartos {
   width: 20%;
   float: left;
-  margin-left:4%;
+  margin-left: 4%;
 }
 
-.ciudad li img{
+.ciudad li img {
   width: 100%;
 }
 
-.ciudad li a{
+.ciudad li a {
   display: block;
   position: relative;
   padding: 56.25% 0 0 0;
@@ -332,77 +345,78 @@ h2::after {
   cursor: help;
 }
 
-.ciudad img{
+.ciudad img {
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
 }
 
-.informacion-adicional i{
+.informacion-adicional i {
   color: var(--brand-color);
   width: 50px;
   font-size: 1.4rem;
   text-align: center;
 }
 
-.informacion-adicional p{
-  padding:10px 0px;
+.informacion-adicional p {
+  padding: 10px 0px;
   font-size: 0.9rem;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Plan*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.plan{
-  /*overflow: hidden;*/
+.plan {
+  overflow: hidden;
   background-color: #f7f7f7;
-  color:black;
-  /*padding-bottom: 60px;*/
+  color: black;
+  padding-bottom: 60px;
 }
 
-.plan-container{
+.plan-container {
   width: 70%;
   margin: auto;
   padding-top: 60px;
 }
 
-.plan-module{
+.plan-module {
   width: 25%;
   background-color: white;
-  border:1px solid rgb(241, 241, 241);
+  border: 1px solid rgb(241, 241, 241);
   display: inline-block;
   margin-left: 6.25%;
-  box-shadow: 1px 1px 10px var(--brand-color); /* la sombra del borde */
+  box-shadow: 1px 1px 10px var(--brand-color);
+  /* la sombra del borde */
 }
 
-.plan-titulo{
+.plan-titulo {
   width: 100%;
   height: 100px;
   background: var(--brand-color);
-  color:white;
+  color: white;
   margin-bottom: 20px;
 }
 
-.plan-titulo h3{
+.plan-titulo h3 {
   font-size: 2.5rem;
   text-align: center;
   /*color: white;*/
 }
 
-.plan-module p{
+.plan-module p {
   font-size: 0.8rem;
-  padding:10px 5px;
+  padding: 10px 5px;
 }
 
-.plan-cuerpo i{
+.plan-cuerpo i {
   width: 30px;
   text-align: center;
-  color:gold;
+  color: gold;
 }
 
-.plan-cuerpo a{
-  display:block;
+.plan-cuerpo a {
+  display: block;
   width: 60%;
   margin: 15px auto;
   text-align: center;
@@ -413,68 +427,72 @@ h2::after {
 /*footer*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-footer{
-   
+footer {
+
   overflow: hidden;
   background-color: #1b1b1b;
-  color:rgb(216, 216, 216);
+  color: rgb(216, 216, 216);
   position: relative;
   height: 30vh;
   font-size: 0.7rem;
 }
 
-.politicas{
+.politicas {
   position: absolute;
   width: 80%;
   left: 0;
   right: 0;
-  top:30px;
-  margin:auto;
+  top: 30px;
+  margin: auto;
   text-align: center;
 }
 
-.politicas::after{
-  display: block; /* para q no comparta espacio con nadie*/
+.politicas::after {
+  display: block;
+  /* para q no comparta espacio con nadie*/
   content: "";
-  width:200px;
-  margin: 20px auto; /* arriba y abajo y a los costados */
+  width: 200px;
+  margin: 20px auto;
+  /* arriba y abajo y a los costados */
   height: 2px;
-  background-color:rgb(231, 230, 230);
+  background-color: rgb(231, 230, 230);
 }
 
-.politicas li{
+.politicas li {
   display: inline-block;
-  padding-left:20px;
+  padding-left: 20px;
   text-decoration: none;
   transition: color 0.2s;
 }
 
-.politicas li:hover{
+.politicas li:hover {
   color: var(--brand-color);
   text-decoration: underline;
   cursor: pointer;
 }
 
-footer .socios{
-  position: absolute; /* el pasdre esta relativo */
-  left:20%;
+footer .socios {
+  position: absolute;
+  /* el pasdre esta relativo */
+  left: 20%;
   top: 40%;
   width: 60%;
 }
 
-.socios img{
+.socios img {
   width: 80px;
   cursor: pointer;
 }
 
-.social-media{
-  position: absolute; /* para moverlo facilmente */
-  right:20%;
+.social-media {
+  position: absolute;
+  /* para moverlo facilmente */
+  right: 20%;
   top: 45%;
   text-align: center;
 }
 
-.social-media i{
+.social-media i {
   width: 20px;
   transition: color 1s;
 }
@@ -484,15 +502,11 @@ footer .socios{
   display: inline;
 }*/
 
-.social-media i:hover{
+.social-media i:hover {
   color: var(--brand-color);
   cursor: pointer;
 }
 
-footer h4{
-margin-bottom: 20px;
+footer h4 {
+  margin-bottom: 20px;
 }
-
-
-
-
